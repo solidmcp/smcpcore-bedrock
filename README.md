@@ -1,4 +1,4 @@
 smcpcore-bedrock
 ================
 
-SolidMCP::Bedrock
+SolidMCP::Bedrock component
