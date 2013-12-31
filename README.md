@@ -1,0 +1,4 @@
+smcpcore-bedrock
+================
+
+SolidMCP::Bedrock
