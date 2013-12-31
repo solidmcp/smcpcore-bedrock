@@ -1,7 +1,7 @@
 
 #ifndef GUARD_SMCPCORE_BEDROCK_STDLIB_STDINCLUDES_H
 #define GUARD_SMCPCORE_BEDROCK_STDLIB_STDINCLUDES_H
-
+#pragma once
 
 #include <sys/types.h>
 #include <sys/timeb.h>

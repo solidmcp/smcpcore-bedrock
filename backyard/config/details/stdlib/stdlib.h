@@ -2,6 +2,7 @@
 
 #ifndef GUARD_SMCPCORE_BEDROCK_STD_H
 #define GUARD_SMCPCORE_BEDROCK_STD_H
+#pragma once
 
 #include "stdincludes.h"
 
@@ -13,27 +14,27 @@
 
  //CodeBlocks
 #ifndef snprintf
-#	ifdef SMCP_COMPILER_MSVC
-#		ifndef _snprintf
-#			define snprintf _snprintf
-#		else
-#			error ("snprintf is not defined. Please include <stdio.h> or <cstdio>")
-#		endif
-#	else
-#		error ("snprintf is not defined.")
-#	endif
+#    ifdef SMCP_COMPILER_MSVC
+#        ifndef _snprintf
+#            define snprintf _snprintf
+#        else
+#            error ("snprintf is not defined. Please include <stdio.h> or <cstdio>")
+#        endif
+#    else
+#        error ("snprintf is not defined.")
+#    endif
 #endif
 
 #ifndef snwprintf
-#	ifdef SMCP_COMPILER_MSVC
-#		ifndef _snwprintf
-#			define snwprintf _snwprintf
-#		else
-#			error ("snprintf is not defined. Please include <stdio.h> or <cstdio>")
-#		endif
-#	else
-#		error ("snwprintf is not defined.")
-#	endif
+#    ifdef SMCP_COMPILER_MSVC
+#        ifndef _snwprintf
+#            define snwprintf _snwprintf
+#        else
+#            error ("snprintf is not defined. Please include <stdio.h> or <cstdio>")
+#        endif
+#    else
+#        error ("snwprintf is not defined.")
+#    endif
 #endif
 
 
@@ -66,27 +67,27 @@
 
 
 //#ifndef csicmp
-//#	ifdef SMCP_COMPILER_MSVC
-//#		ifndef _snprintf
-//#			define strcmp _tcsicmp
-//#		else
-//#			error ("snprintf is not defined. Please include <stdio.h> or <cstdio>")
-//#		endif
-//#	else
-//#		error ("snprintf is not defined.")
-//#	endif
+//#    ifdef SMCP_COMPILER_MSVC
+//#        ifndef _snprintf
+//#            define strcmp _tcsicmp
+//#        else
+//#            error ("snprintf is not defined. Please include <stdio.h> or <cstdio>")
+//#        endif
+//#    else
+//#        error ("snprintf is not defined.")
+//#    endif
 //#endif
 //
 //#ifndef snwprintf
-//#	ifdef SMCP_COMPILER_MSVC
-//#		ifndef _snwprintf
-//#			define snwprintf _snwprintf
-//#		else
-//#			error ("snprintf is not defined. Please include <stdio.h> or <cstdio>")
-//#		endif
-//#	else
-//#		error ("snprintf is not defined.")
-//#	endif
+//#    ifdef SMCP_COMPILER_MSVC
+//#        ifndef _snwprintf
+//#            define snwprintf _snwprintf
+//#        else
+//#            error ("snprintf is not defined. Please include <stdio.h> or <cstdio>")
+//#        endif
+//#    else
+//#        error ("snprintf is not defined.")
+//#    endif
 //#endif
 
 //BEGIN_NAMESPACE_BEDROCK

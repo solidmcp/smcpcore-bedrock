@@ -4,6 +4,7 @@
 //
 #ifndef GUARD_SMCPCORE_BEDROCK_CONFIG_DEBUGGING_H
 #define GUARD_SMCPCORE_BEDROCK_CONFIG_DEBUGGING_H
+#pragma once
 
 // It's borrowed from "Windows via C/C++"
 // It's a useful Reminder for Dev to Pay attention to near code lines later...

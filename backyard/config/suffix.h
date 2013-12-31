@@ -1,5 +1,6 @@
 #ifndef GUARD_SMCPCORE_BEDROCK_SUFFIX_H
 #define GUARD_SMCPCORE_BEDROCK_SUFFIX_H
+#pragma once
 
 #pragma message("SolidMCP BEDROCK")
 

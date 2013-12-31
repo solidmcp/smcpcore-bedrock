@@ -1,7 +1,7 @@
 
 #ifndef GUARD_SMCPCORE_BEDROCK_CONFIG_DISABLEWARNINGS_H
 #define GUARD_SMCPCORE_BEDROCK_CONFIG_DISABLEWARNINGS_H
-
+#pragma once
 
 // Avoid "unused parameter" warnings
 //

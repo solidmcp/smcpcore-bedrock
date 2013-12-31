@@ -1,6 +1,6 @@
 #ifndef GUARD_SMCPCORE_BEDROCK_AUTOLINK_H
 #define GUARD_SMCPCORE_BEDROCK_AUTOLINK_H
-
+#pragma once
 
 // Copyed from Webkit/WTF
 
