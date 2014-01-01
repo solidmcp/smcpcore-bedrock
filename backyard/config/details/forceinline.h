@@ -2,7 +2,7 @@
 #define GUARD_SMCPCORE_BEDROCK_AUTOLINK_H
 #pragma once
 
-// Copyed from Webkit/WTF
+// Copied from Webkit/WTF
 
 #ifndef ALWAYS_INLINE
 #if COMPILER(GCC) && defined(NDEBUG) && !COMPILER(MINGW)

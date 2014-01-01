@@ -6,13 +6,8 @@
 #define GUARD_SMCPCORE_BEDROCK_CONFIG_BASICTYPES_H
 #pragma once
 
-#if defined(GUARD_SMCPCORE_BEDROCK_CONFIG_CROSSTHINGS_SELECTOR_H)
 #include "selector.h"
-#endif
-
-#if defined(GUARD_SMCPCORE_BEDROCK_CONFIG_PREPROCESSOR_H)
 #include "preprocessor.h"
-#endif
 
 // limits macros
 #include <climits>
@@ -49,11 +44,11 @@ typedef unsigned long ULong;
 # endif
 
 //#if defined(SMCP_COMPILER_MSVC)
-//        typedef __int8 Int8;
-//        typedef unsigned __int8 UInt8;
+//    typedef __int8 Int8;
+//    typedef unsigned __int8 UInt8;
 //#else
-//        typedef signed char Int8;
-//        typedef unsigned char UInt8;
+//    typedef signed char Int8;
+//    typedef unsigned char UInt8;
 //#endif
 
 //typedef unsigned char    BYTE;
@@ -62,29 +57,29 @@ typedef unsigned char Byte;
 
 //  16-bit types
 #if USHRT_MAX == 0xffff
-    typedef short			Int16;
-    typedef unsigned short	UInt16;
+    typedef short            Int16;
+    typedef unsigned short   UInt16;
 #else
 #    error defaults not correct;
 # endif
 //#if defined(SMCP_COMPILER_MSVC)
-//        typedef __int16 Int16;
-//        typedef unsigned __int16 UInt16;
+//    typedef __int16 Int16;
+//    typedef unsigned __int16 UInt16;
 //#else
-//        typedef short			Int16;
-//        typedef unsigned short	UInt16;
+//    typedef short            Int16;
+//    typedef unsigned short   UInt16;
 //#endif
 
 //  32-bit types
 //
 # if ULONG_MAX == 0xffffffff
-        typedef long			Int32;
-        typedef unsigned long	UInt32;
+        typedef long            Int32;
+        typedef unsigned long   UInt32;
 # elif UINT_MAX == 0xffffffff
-        typedef int				Int32;
-        typedef unsigned int	UInt32;
+        typedef int             Int32;
+        typedef unsigned int    UInt32;
 # else
-#	error defaults not correct;
+#    error defaults not correct;
 # endif
 
 

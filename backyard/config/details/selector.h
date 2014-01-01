@@ -6,12 +6,10 @@
 //
 
 // Microsoft Windows
-//
 #if defined(_WIN32) || defined(__WIN32__) || defined(WIN32) || defined(_WIN64)
 #	define SMCP_PLATFORM_HEADER "platform/windows.h"
 
 // Apple Macintosh
-//
 #elif defined(macintosh) || defined(__APPLE__) || defined(__APPLE_CC__)
 #  define SMCP_PLATFORM_HEADER "plateform/macosx.h"
 
@@ -43,15 +41,15 @@
 // Microsoft Visual Studio C++
 //
 #if defined(_MSC_VER)
-#  define SMCP_COMPILER_HEADER "Compiler/VC.h"
+#  define SMCP_COMPILER_HEADER "compiler/VC.h"
 
 #elif defined(__clang__)
-#  define SMCP_COMPILER_HEADER "Compiler/clang.h"
+#  define SMCP_COMPILER_HEADER "compiler/clang.h"
 
 // Gnu Compiler Collection
 //
 #elif defined(__GNUC__)
-#  define SMCP_COMPILER_HEADER "Compiler/GCC.h"
+#  define SMCP_COMPILER_HEADER "compiler/GCC.h"
 
 // Unsupported Compilers
 //
