@@ -24,8 +24,8 @@
 // It also makes it possible to use Functor for Undo/redo.
 
 
-#ifndef GUARD_SMCPCORE_BEDROCK_FUNCTIONAL_FUNCTOR_H
-#define GUARD_SMCPCORE_BEDROCK_FUNCTIONAL_FUNCTOR_H
+#ifndef GUARD_SMCPCORE_BEDROCK_BACKYARD_FUNCTIONAL_FUNCTOR_H
+#define GUARD_SMCPCORE_BEDROCK_BACKYARD_FUNCTIONAL_FUNCTOR_H
 #pragma once
 
 #include "../typetystem/nulltype.h"
@@ -217,4 +217,4 @@ struct FunctorFactory
 
 }}
 
-#endif //
+#endif // GUARD_SMCPCORE_BEDROCK_BACKYARD_FUNCTIONAL_FUNCTOR_H

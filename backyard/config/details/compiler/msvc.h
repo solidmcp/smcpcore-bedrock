@@ -13,8 +13,8 @@
 ///    MS VC++ 5.0  _MSC_VER = 1100
 ///////////////////////////////////////////////////////////////////////////////
 
-#ifndef GUARD_SMCPCORE_BEDROCK_CONFIG_COMPILER_VC_H
-#define GUARD_SMCPCORE_BEDROCK_CONFIG_COMPILER_VC_H
+#ifndef GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_COMPILER_VC_H
+#define GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_COMPILER_VC_H
 #pragma once
 
 #ifndef _MSC_VER
@@ -28,6 +28,6 @@
 #define SMCP_COMPILER_MSVC _MSC_VER
 
 // C++ 11 Support in different compiler
-#include "cxx11support.h"
+#include "cxx11stestcatchtuttupport.h"
 
-#endif // GUARD_SMCPCORE_BEDROCK_CONFIG_COMPILER_VC_H
+#endif // GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_COMPILER_VC_H

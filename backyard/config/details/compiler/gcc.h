@@ -8,8 +8,8 @@
 ///    __GNUC_MINOR__ == 5
 ///    __GNUC_PATCHLEVEL__ == 3
 ///////////////////////////////////////////////////////////////////////////////
-#ifndef GUARD_SMCPCORE_BEDROCK_CONFIG_COMPILER_GCC_H
-#define GUARD_SMCPCORE_BEDROCK_CONFIG_COMPILER_GCC_H
+#ifndef GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_COMPILER_GCC_H
+#define GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_COMPILER_GCC_H
 #pragma once
 
 #ifndef __GNUC__
@@ -25,4 +25,4 @@
 // C++ 11 Support in different compiler
 #include "cxx11support.h"
 
-#endif // GUARD_SMCPCORE_BEDROCK_CONFIG_COMPILER_GCC_H
+#endif // GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_COMPILER_GCC_H

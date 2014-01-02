@@ -5,8 +5,8 @@
 ///
 ///////////////////////////////////////////////////////////////////////////////
 
-#ifndef GUARD_SMCPCORE_BEDROCK_CONFIG_COMPILER_CLANG_H
-#define GUARD_SMCPCORE_BEDROCK_CONFIG_COMPILER_CLANG_H
+#ifndef GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_COMPILER_CLANG_H
+#define GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_COMPILER_CLANG_H
 #pragma once
 
 #ifndef __clang__
@@ -22,4 +22,4 @@
 // C++ 11 Support in different compiler
 #include "cxx11support.h"
 
-#endif // GUARD_SMCPCORE_BEDROCK_CONFIG_COMPILER_CLANG_H
+#endif // GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_COMPILER_CLANG_H

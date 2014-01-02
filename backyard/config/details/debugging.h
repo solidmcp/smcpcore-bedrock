@@ -2,8 +2,8 @@
 // Add #includes of Standard C++/C headers are encouraged to be placed here.
 //
 //
-#ifndef GUARD_SMCPCORE_BEDROCK_CONFIG_DEBUGGING_H
-#define GUARD_SMCPCORE_BEDROCK_CONFIG_DEBUGGING_H
+#ifndef GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_DEBUGGING_H
+#define GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_DEBUGGING_H
 #pragma once
 
 // It's borrowed from "Windows via C/C++"
@@ -15,4 +15,4 @@
 #define SMCP_REMINDER(desc)  message(__FILE__ "(" SMCP_STRINGIZE(__LINE__) "):" "\n[<Development Reminder>] " #desc)
 
 
-#endif // GUARD_SMCPCORE_BEDROCK_CONFIG_DEBUGGING_H
+#endif // GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_DEBUGGING_H

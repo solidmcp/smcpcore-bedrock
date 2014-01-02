@@ -1,5 +1,5 @@
-#ifndef GUARD_SMCPCORE_BEDROCK_CONFIG_H
-#define GUARD_SMCPCORE_BEDROCK_CONFIG_H
+#ifndef GUARD_SMCPCORE_BEDROCK_API_CONFIG_H
+#define GUARD_SMCPCORE_BEDROCK_API_CONFIG_H
 #pragma once
 
 // Similar to Boost, I add this config and suffix for global configurations..
@@ -10,4 +10,4 @@
 #pragma message("//----------------------------------------------------------")
 
 
-#endif // GUARD_SMCPCORE_BEDROCK_CONFIG_H
+#endif // GUARD_SMCPCORE_BEDROCK_API_CONFIG_H

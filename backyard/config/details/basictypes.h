@@ -2,8 +2,8 @@
 // Add #includes of Standard C++/C headers are encouraged to be placed here.
 // length of some types on different plateforms are not same, so typedef can be good idea here.
 //
-#ifndef GUARD_SMCPCORE_BEDROCK_CONFIG_BASICTYPES_H
-#define GUARD_SMCPCORE_BEDROCK_CONFIG_BASICTYPES_H
+#ifndef GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_BASICTYPES_H
+#define GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_BASICTYPES_H
 #pragma once
 
 #include "selector.h"
@@ -126,4 +126,4 @@ typedef struct
 
 }}
 
-#endif // GUARD_SMCPCORE_BEDROCK_CONFIG_BASICTYPES_H
+#endif // GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_BASICTYPES_H
