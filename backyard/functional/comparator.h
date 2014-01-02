@@ -1,10 +1,8 @@
 
 #ifndef GUARD_SMCPCORE_BEDROCK_FUNCTIONAL_COMPARATOR_H
 #define GUARD_SMCPCORE_BEDROCK_FUNCTIONAL_COMPARATOR_H
-
 #pragma once
-#include "../Global/Global.h"
-#include "../Text/CharType.h"
+
 
 namespace SolidMCP { namespace BedRock {
 

@@ -29,10 +29,8 @@
 #define GUARD_SMCPCORE_BEDROCK_FUNCTIONAL_DETAILS_FUNCTOINPTR_H
 #pragma once
 
-#include "../../Global/Global.h"
-#include "../../TypeSystem/NullType.h"
-
-#include "CallableEntity.h"
+#include "../../typesystem/nulltype.h"
+#include "callableentity.h"
 
 namespace SolidMCP { namespace BedRock {
 
@@ -257,14 +255,15 @@ public:
         return *this;
     }
 
-    Callback GetCallback() const { return func_ptr;}
+    Callback GetCallback() const
+    {
+       return func_ptr;
+   }
 
-        virtual CallableEntityType::Code Type() const
-        {
-            return static_cast<CallableEntityType::Code>( CallableType);
-        }
-
-
+    virtual CallableEntityType::Code Type() const
+    {
+        return static_cast<CallableEntityType::Code>( CallableType);
+    }
 
 private:
     Callback func_ptr;

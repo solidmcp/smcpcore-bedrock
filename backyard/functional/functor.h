@@ -22,19 +22,17 @@
 // By using Bind, you can bind different value to a functor,
 // then the functors are different though they are from same callback.
 // It also makes it possible to use Functor for Undo/redo.
-//
 
 
 #ifndef GUARD_SMCPCORE_BEDROCK_FUNCTIONAL_FUNCTOR_H
-#define GUARD_SMCPCORE_BEDROCK_FUNCTIONAL_FUNCTOR_z
+#define GUARD_SMCPCORE_BEDROCK_FUNCTIONAL_FUNCTOR_H
 #pragma once
 
-#include "../Global/Global.h"
-#include "../TypeSystem/NullType.h"
+#include "../typetystem/nulltype.h"
 
-#include "Details/FunctionPtr.h"
-#include "Details/MemFuncPtr.h"
-#include "Details/OperPtr.h"
+#include "details/functionptr.h"
+#include "details/memfuncptr.h"
+#include "details/operptr.h"
 
 namespace SolidMCP { namespace BedRock {
 
@@ -120,9 +118,9 @@ public:
     }
 
     CallableEntityType::Code CallableType() const
-	{
-		return m_pCallableEntity ? m_pCallableEntity->Type() : CallableEntityType::kUnknow;
-	}
+    {
+        return m_pCallableEntity ? m_pCallableEntity->Type() : CallableEntityType::kUnknow;
+    }
 
 public:
 
@@ -182,7 +180,7 @@ private:
 
 
 // -------------------------------------------------
-// Helper functions to wrap callbacks with Fucntor
+// Helper functions to wrap callbacks with Functor
 // -------------------------------------------------
 // It's the primary template handles maximum number of parameters:
 //

@@ -6,14 +6,7 @@
 //
 #ifndef GUARD_SMCPCORE_BEDROCK_FUNCTIONAL_DETAILS_CALLABLEENTITY_H
 #define GUARD_SMCPCORE_BEDROCK_FUNCTIONAL_DETAILS_CALLABLEENTITY_H
-
-// MS compatible compilers support #pragma once
-#if defined(_MSC_VER) && (_MSC_VER >= 1020)
 # pragma once
-#endif
-
-#include "../../Global/Global.h"
-
 
 namespace SolidMCP { namespace BedRock {
 

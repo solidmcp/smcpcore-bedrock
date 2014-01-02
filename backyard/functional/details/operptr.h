@@ -1,13 +1,13 @@
 
 #ifndef GUARD_SMCPCORE_BEDROCK_FUNCTIONAL_DETAILS_OPERPTR_H
 #define GUARD_SMCPCORE_BEDROCK_FUNCTIONAL_DETAILS_OPERPTR_H
-
 #pragma once
-#include "../../Global/Global.h"
-#include "../../TypeSystem/NullType.h"
-#include "FunctionPtr.h"
 
-BEGIN_NAMESPACE_BEDROCK
+#include "../../typesystem/nulltype.h"
+#include "callableentity.h"
+#include "functionptr.h"
+
+namespace SolidMCP { namespace BedRock {
 
 // -----------------------------------------------------------------
 // OperFunctor for C++ operator(...) (Variants = 6)

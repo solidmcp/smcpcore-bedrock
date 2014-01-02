@@ -2,9 +2,8 @@
 #define GUARD_SMCPCORE_BEDROCK_FUNCTIONAL_DETAILS_MEMBERFUNCPTR_H
 
 #pragma once
-#include "../../Global/Global.h"
-#include "../../TypeSystem/NullType.h"
-#include "CallableEntity.h"
+#include "../../typesystem/nulltype.h"
+#include "callableentity.h"
 
 namespace SolidMCP { namespace BedRock {
 

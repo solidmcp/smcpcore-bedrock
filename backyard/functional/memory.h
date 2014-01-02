@@ -3,7 +3,6 @@
 #define GUARD_SMCPCORE_BEDROCK_FUNCTIONAL_MEMORY_H
 #pragma once
 
-
 #include "../typesystem/nullptr.h"
 
 namespace SolidMCP { namespace BedRock {

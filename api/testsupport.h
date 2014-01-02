@@ -2,11 +2,9 @@
 // Baking TUT and catch into SolidMCP. Both of them are header only.
 // TUT: C++ Template Unit Test Framework
 // catch: C++ Automated Test Cases in Headers
-//
+
 #ifndef GUARD_SMCPCORE_BEDROCK_TESTSUPPORT_H
 #define GUARD_SMCPCORE_BEDROCK_TESTSUPPORT_H
-
-#pragma message("Build a wrapper for TUT and igloo")
 
 // Unit Test Support
 // TUT 2009
