@@ -1,5 +1,5 @@
 
-// Baking TUT and catch into SolidMCP. Both of them are heard only.
+// Baking TUT and catch into SolidMCP. Both of them are header only.
 // TUT: C++ Template Unit Test Framework
 // catch: C++ Automated Test Cases in Headers
 //
