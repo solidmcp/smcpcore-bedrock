@@ -8,6 +8,7 @@
 /// <br> -- <a href="http://gcc.gnu.org/projects/cxx0x.html">C++0x/C++11 Support in GCC</a>
 /// <br> -- <a href="http://clang.llvm.org/cxx_status.html">C++98 and C++11 Support in Clang</a>
 ///////////////////////////////////////////////////////////////////////////////
+
 #ifndef GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_COMPILER_CXX11SUPPORT_H
 #define GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_COMPILER_CXX11SUPPORT_H
 #pragma once

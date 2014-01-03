@@ -6,7 +6,7 @@
 
 #include "stdincludes.h"
 
-// After changing the implementation to the nexe one, there is a build error in StringBuilder
+// After changing the implementation to the next one, there is a build error in StringBuilder
 // I have to disable a couple of Append methods. so, let's disable following override for now.
 
 // snprintf / swnprintf
