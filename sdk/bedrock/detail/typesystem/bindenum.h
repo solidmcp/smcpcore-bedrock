@@ -3,9 +3,9 @@
 #define GUARD_SMCPCORE_BEDROCK_TYPESYSTEM_BINDENUM_H
 
 #pragma once
-#include "../MPL/Typelist.h"
-#include "../MPL/ConstantTuple.h"
-#include "../Status/Exception.h"
+#include "../mpl/typelist.h"
+#include "../mpl/constanttuple.h"
+#include "../status/exception.h"
 
 // --------------------------------------------------------------------------------------------------------
 // Bind Enum with Tempalte based solution originated from meta programming

@@ -30,9 +30,9 @@
 
 #include "../typetystem/nulltype.h"
 
-#include "details/functionptr.h"
-#include "details/memfuncptr.h"
-#include "details/operptr.h"
+#include "detail/functionptr.h"
+#include "detail/memfuncptr.h"
+#include "detail/operptr.h"
 
 namespace SolidMCP { namespace BedRock {
 

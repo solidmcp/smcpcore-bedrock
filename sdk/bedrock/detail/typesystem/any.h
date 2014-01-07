@@ -7,14 +7,14 @@
 #define GUARD_SMCPCORE_BEDROCK_TYPESYSTEM_ANY_H
 
 #pragma once
-#include "../Config.h"
-#include "../Memory/Smart_Ptr.h"
-#include "../TypeSystem/Type_Casts.h"
+#include "../config.h"
+#include "../memory/smartptr.h"
+#include "../typesystem/typecasts.h"
 
 
 namespace SolidMCP { namespace BedRock {
 
-namespace Private
+namespace Backyard
 {
     class DataHolder
     {
@@ -26,10 +26,10 @@ namespace Private
     class TDataHolder : public DataHolder
     {
     public:
-        TDataHolder(const T& data) : m_Data(data){}
+        TDataHolder(const T& data) : m_data(data){}
 
     public:
-        T  m_Data;
+        T  m_data;
     };
 }
 
@@ -40,7 +40,7 @@ public:
     template<typename T>
     Any(const T& data)
     {
-        m_pDataHolder = Smart_Ptr<Private::DataHolder>(new Private::TDataHolder<T>(data));
+        m_pDataHolder = Smart_Ptr<Backyard::DataHolder>(new Backyard::TDataHolder<T>(data));
     }
 
     Any(const Any& right)
@@ -57,19 +57,19 @@ public:
     //template<typename T>
     //const T& operator()()
     //{
-    //    return Any::QueryData(m_pDataHolder)->m_Data;
+    //    return Any::QueryData(m_pDataHolder)->m_data;
     //}
 
     template<typename T>
     const T& GetTarget() const
     {
-        return Any::QueryData<T>(m_pDataHolder)->m_Data;
+        return Any::QueryData<T>(m_pDataHolder)->m_data;
     }
 
     template<typename T>
     T& GetTarget()
     {
-        return Any::QueryData<T>(m_pDataHolder)->m_Data;
+        return Any::QueryData<T>(m_pDataHolder)->m_data;
     }
 
 
@@ -79,21 +79,21 @@ public:
         if(!m_pDataHolder.isNull())
             m_pDataHolder.release();
 
-        m_pDataHolder = Smart_Ptr<Private::DataHolder>(new Private::TDataHolder<T>(data));
+        m_pDataHolder = Smart_Ptr<Backyard::DataHolder>(new Backyard::TDataHolder<T>(data));
     };
 
-private:
+Backyard:
     Any() {}
 
     template<typename T>
-    static Private::TDataHolder<T>* QueryData(const Smart_Ptr<Private::DataHolder>& rDataHolder)
+    static Backyard::TDataHolder<T>* QueryData(const Smart_Ptr<Backyard::DataHolder>& rDataHolder)
     {
-        return Dynamic_Cast<Private::TDataHolder<T>* >(rDataHolder.get());
+        return Dynamic_Cast<Backyard::TDataHolder<T>* >(rDataHolder.get());
     }
 
-private:
+Backyard:
 
-    Smart_Ptr<Private::DataHolder>  m_pDataHolder;
+    Smart_Ptr<Backyard::DataHolder>  m_pDataHolder;
 };
 
 }}

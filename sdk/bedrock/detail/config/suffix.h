@@ -98,13 +98,13 @@ inline void SMCP_NOOP() {}
 
 // Byte Order: Little Endian or Big Endian.
 //
-#include "details/byteorder.h"
+#include "./details/byteorder.h"
 
 // Plateform/Compiler Selecting.Using following Macro in your applications.
 // SMCP_PLATFORM_WINDOWS
 // SMCP_PLATFORM_MACOSX
 // SMCP_PLATFORM_LINUX
-#include "details/selector.h"
+#include "./details/selector.h"
 
 // Only support MSVC currently
 //
@@ -115,35 +115,35 @@ inline void SMCP_NOOP() {}
 
 // Deal with Pre-processors: Character Set /
 //
-#include "details/preprocessor.h"
+#include "./details/preprocessor.h"
 
 // Disabled Warnings
 //
 #if SMCP_ENABLE_DISABLEWARNINGS
-#	include "details/disablewarnings.h"
+#	include "./details/disablewarnings.h"
 #endif
 
 
 // Standard C/C++ Library
 //
-#include "details/stdlib/stdlib.h"
+#include "./details/stdlib/stdlib.h"
 
 // Basic Types
 //
-#include "details/basictypes.h"
-#include "details/moretyes.h"
+#include "./details/basictypes.h"
+#include "./details/moretyes.h"
 
 // Debugging Macros or Utilities
 //
-#include "details/debugging.h"
+#include "./details/debugging.h"
 
 // ASCII Table
 //
-#include "details/asciitable.h"
+#include "./details/asciitable.h"
 
 // Auto link is a wonderful feature of Boost..
 //
-#include "details/autolink.h"
+#include "./details/autolink.h"
 
 
 // Architecture Type Selctor
