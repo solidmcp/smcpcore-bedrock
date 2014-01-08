@@ -7,22 +7,21 @@
 
 // Microsoft Windows
 #if defined(_WIN32) || defined(__WIN32__) || defined(WIN32) || defined(_WIN64)
-#	define SMCP_PLATFORM_HEADER "platform/windows.h"
+#    define SMCP_PLATFORM_HEADER "platform/windows.h"
 
 // Apple Macintosh
 #elif defined(macintosh) || defined(__APPLE__) || defined(__APPLE_CC__)
-#  define SMCP_PLATFORM_HEADER "plateform/macosx.h"
+#    define SMCP_PLATFORM_HEADER "plateform/macosx.h"
 
 // Linux System
 #elif defined(__linux__) || defined (linux) || defined (__linux)
-#  define SMCP_PLATFORM_HEADER "plateform/linux.h"
+#    define SMCP_PLATFORM_HEADER "plateform/linux.h"
 
 // Unsupported Plateforms
 //
 #else
-#	error("It's not on the schedule of SolidMCP at all.")
+#    error("It's not on the schedule of SolidMCP at all.")
 #endif
-
 
 // Compiler Selector
 //
@@ -41,35 +40,36 @@
 // Microsoft Visual Studio C++
 //
 #if defined(_MSC_VER)
-#  define SMCP_COMPILER_HEADER "compiler/VC.h"
+#    define SMCP_COMPILER_HEADER "compiler/VC.h"
 
 #elif defined(__clang__)
-#  define SMCP_COMPILER_HEADER "compiler/clang.h"
+#    define SMCP_COMPILER_HEADER "compiler/clang.h"
 
 // Gnu Compiler Collection
 //
 #elif defined(__GNUC__)
-#  define SMCP_COMPILER_HEADER "compiler/GCC.h"
+#    define SMCP_COMPILER_HEADER "compiler/GCC.h"
 
 // Unsupported Compilers
 //
 #else
-#	error("It's not on the schedule of SolidMCP")
+#    error("It's not on the schedule of SolidMCP")
 #endif
 
 
 #if defined(SMCP_COMPILER_HEADER)
-#	include SMCP_COMPILER_HEADER
+#    include SMCP_COMPILER_HEADER
 #endif
-
 
 #if defined(SMCP_PLATFORM_HEADER)
-#	include SMCP_PLATFORM_HEADER
+#    include SMCP_PLATFORM_HEADER
 #endif
 
+#pragma message(SMCP_COMPILER_NAME)
+#pragma message(SMCP_PLATFORM_NAME)
 
 #define PRAGMA_MESSAGE SMCP_COMPILER_NAME "  Version " SMCP_STRINGIZE(SMCP_COMPILER_VERSION)
-#pragma message(PRAGMA_MESSAGE)
+#    pragma message(PRAGMA_MESSAGE)
 #undef PRAGMA_MESSAGE
 
 #endif // GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_SELECTOR_H

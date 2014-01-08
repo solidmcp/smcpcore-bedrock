@@ -17,7 +17,7 @@
 #define GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_COMPILER_VC_H
 #pragma once
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER)
 # pragma error("Uncompatiable compiler is detected..")
 #endif
 
@@ -28,6 +28,6 @@
 #define SMCP_COMPILER_MSVC _MSC_VER
 
 // C++ 11 Support in different compiler
-#include "cxx11stestcatchtuttupport.h"
+#include "cxx11support.h"
 
 #endif // GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_COMPILER_VC_H

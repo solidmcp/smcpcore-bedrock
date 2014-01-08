@@ -96,8 +96,8 @@
 
 // Add any new disabled warnings here
 // so that we can know what's happened in compilation message.
-#   pragma message("Pre-disabled Warnings: 4786, 4503, 4244, 4305, 4267, 4251, 4275, 4995, 4996, 4290, 4172, 4309, 4511")
-#   pragma message("Pre-disabled Warnings: 4512, 4514, 4800, 4097, 4706, 4660, 4355, 4231, 4710, 4530, 4284, 4510, 4201")
+//#   pragma message("Pre-disabled Warnings: 4786, 4503, 4244, 4305, 4267, 4251, 4275, 4995, 4996, 4290, 4172, 4309, 4511")
+//#   pragma message("Pre-disabled Warnings: 4512, 4514, 4800, 4097, 4706, 4660, 4355, 4231, 4710, 4530, 4284, 4510, 4201")
 
 #endif
 

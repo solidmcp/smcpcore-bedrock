@@ -4,7 +4,7 @@
 ///
 /// \par References:
 /// <br> -- <a href="http://en.wikipedia.org/wiki/C%2B%2B0x">C++ 11 on WikipediaM</a>
-/// <br> -- <a href="http://blogs.msdn.com/b/vcblog/archive/2010/04/06/c-0x-core-language-features-in-vc10-the-table.aspx">C++0x Core Language Features In VC10: The Table</a>
+/// <br> -- <a href="http://msdn.microsoft.com/en-us/library/hh567368.aspx">modern</a>
 /// <br> -- <a href="http://gcc.gnu.org/projects/cxx0x.html">C++0x/C++11 Support in GCC</a>
 /// <br> -- <a href="http://clang.llvm.org/cxx_status.html">C++98 and C++11 Support in Clang</a>
 ///////////////////////////////////////////////////////////////////////////////

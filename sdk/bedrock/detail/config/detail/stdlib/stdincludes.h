@@ -7,8 +7,6 @@
 #include <sys/timeb.h>
 #include <sys/stat.h>
 
-
-
 #pragma message("Standard C/C++ Library")
 
 // ANSI C Library

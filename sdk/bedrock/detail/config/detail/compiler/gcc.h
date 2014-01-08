@@ -13,7 +13,7 @@
 #define GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_COMPILER_GCC_H
 #pragma once
 
-#ifndef __GNUC__
+#if !defined(__GNUC__)
 # pragma error("Uncompatiable compiler is detected..")
 #endif
 

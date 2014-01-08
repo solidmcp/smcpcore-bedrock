@@ -9,7 +9,7 @@
 #define GUARD_SMCPCORE_BEDROCK_BACKYARD_CONFIG_DETAILS_COMPILER_CLANG_H
 #pragma once
 
-#ifndef __clang__
+#if !defined(__clang__)
 # pragma error("Uncompatiable compiler is detected..")
 #endif
 
