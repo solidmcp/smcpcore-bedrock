@@ -5,8 +5,8 @@
 
 #ifndef GUARD_SMCPCORE_BEDROCK_TYPESYSTEM_ANY_H
 #define GUARD_SMCPCORE_BEDROCK_TYPESYSTEM_ANY_H
-
 #pragma once
+
 #include "../config.h"
 #include "../memory/smartptr.h"
 #include "../typesystem/typecasts.h"

@@ -26,8 +26,8 @@
 #define SMCP_COMPILER(name) (defined SMCP_COMPILER_##name && SMCP_COMPILER_##name)
 #define SMCP_PLATFORM(name) (defined SMCP_PLATFORM_##name && SMCP_PLATFORM_##name)
 
-//  #define SMCP_ENABLE_REVOLUTION 1
-//  #if SMCP_ENABLED(REVOLUTION)
+//  #define SMCP_ENABLE_SSE3 1
+//  #if SMCP_ENABLED(SSE3)
 //  #endif
 #define SMCP_ENABLED(name) (defined SMCP_ENABLE_##name && SMCP_ENABLE_##name)
 
@@ -61,15 +61,15 @@
 #define _SMCP_FORCE_NSTRING_(s)       (s)
 
 #ifdef _UNICODE
-#   define _SMCP_FORCE_STRING_(s)        _SMCP_FORCE_WSTRING_(s)
+#    define _SMCP_FORCE_STRING_(s)        _SMCP_FORCE_WSTRING_(s)
 #else
-#	ifdef _MBCS
-#		define _SMCP_FORCE_STRING_(s)    _SMCP_FORCE_NSTRING_(s)
-#	else
+#   ifdef _MBCS
+#       define _SMCP_FORCE_STRING_(s)    _SMCP_FORCE_NSTRING_(s)
+#   else
 //#pragma SMCP_REMINDER("_MBCS/_UNICODE Not Defined, Make MBCS As the default")
-#		define _MBCS
-#		define _SMCP_FORCE_STRING_(s)    _SMCP_FORCE_NSTRING_(s)
-#	endif
+#       define _MBCS
+#       define _SMCP_FORCE_STRING_(s)    _SMCP_FORCE_NSTRING_(s)
+#   endif
 #endif
 
 
@@ -109,7 +109,7 @@ inline void SMCP_NOOP() {}
 // Only support MSVC currently
 //
 #if !defined(SMCP_COMPILER_MSVC) && !defined(SMCP_COMPILER_GCC)
-#	error("Notice: Only working on MSVC and GCC now, Compatiable? You bet it!")
+#    error("Notice: Only working on MSVC and GCC now, Compatiable? You bet it!")
 #endif
 
 
@@ -120,7 +120,7 @@ inline void SMCP_NOOP() {}
 // Disabled Warnings
 //
 #if SMCP_ENABLE_DISABLEWARNINGS
-#	include "./details/disablewarnings.h"
+#    include "./details/disablewarnings.h"
 #endif
 
 
@@ -150,9 +150,9 @@ inline void SMCP_NOOP() {}
 #define SMCP_ARCHITECTURE_32 1
 #define SMCP_ARCHITECTURE_64 2
 #if defined(__x86_64__) || defined(_M_X64) | defined(__ia64__)
-#   define SMCP_ARCHITECTURE_TYPE SMCP_ARCHITECTURE_64
+#    define SMCP_ARCHITECTURE_TYPE SMCP_ARCHITECTURE_64
 #else
-#   define SMCP_ARCHITECTURE_TYPE SMCP_ARCHITECTURE_32
+#    define SMCP_ARCHITECTURE_TYPE SMCP_ARCHITECTURE_32
 #endif
 
 
@@ -160,11 +160,11 @@ inline void SMCP_NOOP() {}
 // Define NULL pointer value
 //
 #ifndef NULL
-#	ifdef __cplusplus
-#		define NULL    0
-#	else
-#		define NULL    ((void *)0)
-#	endif
+#    ifdef __cplusplus
+#        define NULL    0
+#    else
+#        define NULL    ((void *)0)
+#    endif
 #endif
 
 
@@ -191,25 +191,25 @@ inline void SMCP_NOOP() {}
 ///
 /// How to use:
 /// \code
-///	double GetMaxValue()
-///	{
-///		double dA = 20.0;
-///		double dB = 30.0;
+///    double GetMaxValue()
+///    {
+///        double dA = 20.0;
+///        double dB = 30.0;
 ///
-///		SMCP_USING_STD_MAX();
-///		return max SMCP_WORKAROUND_NAME_OVERRIDE(dA, dB);
-///	}
+///        SMCP_USING_STD_MAX();
+///        return max SMCP_WORKAROUND_NAME_OVERRIDE(dA, dB);
+///    }
 /// \endcode
 #ifndef SMCP_USING_STD_MIN_DECLARATION
-#	define SMCP_USING_STD_MIN() using std::min
+#    define SMCP_USING_STD_MIN() using std::min
 #else
-#	define SMCP_USING_STD_MIN()
+#    define SMCP_USING_STD_MIN()
 #endif
 
 #ifndef SMCP_USING_STD_MAX_DECLARATION
 #  define SMCP_USING_STD_MAX() using std::max
 #else
-#	define SMCP_USING_STD_MAX()
+#    define SMCP_USING_STD_MAX()
 #endif
 
 // If no std::max and std::min in very rare cases, just define similar ones.
@@ -244,23 +244,23 @@ namespace std
 /// Macros for namespace
 /// \code
 /// #if defined(SMCP_NO_NAMESPACE)
-/// #   define SMCP_BEGIN_NAMESPACE(ns)
-/// #   define SMCP_END_NAMESPACE(ns)
+/// #    define SMCP_BEGIN_NAMESPACE(ns)
+/// #    define SMCP_END_NAMESPACE(ns)
 /// #else
-/// #   define SMCP_BEGIN_NAMESPACE(ns) namespace ns {
-/// #   define SMCP_END_NAMESPACE(ns)                }
+/// #    define SMCP_BEGIN_NAMESPACE(ns) namespace ns {
+/// #    define SMCP_END_NAMESPACE(ns)                }
 /// #endif
 /// \endcode
 #if SMCP_ENABLED(NAMESPACE)
-#   define SMCP_BEGIN_NAMESPACE(ns) namespace ns {
-#   define SMCP_END_NAMESPACE(ns)                }
-#   define BEGIN_ANONYMOUS_NAMESPACE  namespace {
-#   define END_ANONYMOUS_NAMESPACE              }
+#    define SMCP_BEGIN_NAMESPACE(ns) namespace ns {
+#    define SMCP_END_NAMESPACE(ns)                }
+#    define BEGIN_ANONYMOUS_NAMESPACE  namespace {
+#    define END_ANONYMOUS_NAMESPACE              }
 #else
-#   define SMCP_BEGIN_NAMESPACE(ns)
-#   define SMCP_END_NAMESPACE(ns)
-#   define BEGIN_ANONYMOUS_NAMESPACE
-#   define END_ANONYMOUS_NAMESPACE
+#    define SMCP_BEGIN_NAMESPACE(ns)
+#    define SMCP_END_NAMESPACE(ns)
+#    define BEGIN_ANONYMOUS_NAMESPACE
+#    define END_ANONYMOUS_NAMESPACE
 #endif
 
 
@@ -608,13 +608,13 @@ namespace std
 // printf / scanf macros
 //
 #ifndef SMCP_COMPILER_MSVC
-#	define SMCP_SWPRINTF   swprintf_s
-#	define SMCP_SPRINTF    _snprintf
-#	define SMCP_SWSCANF    swscanf_s
+#    define SMCP_SWPRINTF   swprintf_s
+#    define SMCP_SPRINTF    _snprintf
+#    define SMCP_SWSCANF    swscanf_s
 #else
-#	define SMCP_SWPRINTF   swprintf
-#	define SMCP_SPRINTF    snprintf
-#	define SMCP_SWSCANF    swscanf
+#    define SMCP_SWPRINTF   swprintf
+#    define SMCP_SPRINTF    snprintf
+#    define SMCP_SWSCANF    swscanf
 #endif
 
 

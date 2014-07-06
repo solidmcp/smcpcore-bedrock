@@ -1,7 +1,8 @@
 #ifndef GUARD_SMCPCORE_BEDROCK_TYPESYSTEM_TYPECAST_H
 #define GUARD_SMCPCORE_BEDROCK_TYPESYSTEM_TYPECAST_H
+#pragma once
 
-#include "../Config.h"
+#include "../config.h"
 #include "../Status/Static_Assert.h"
 #include "../Status/Exception.h"
 #include "../TypeSystem/Type_Traits.h"

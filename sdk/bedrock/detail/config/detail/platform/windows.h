@@ -13,7 +13,7 @@
 #elif defined(_M_IA64)
 #    define SMCP_PLATFORM_NAME SMCP_PLATFORM_NAME_IA64
 #else
-#    error "Unknown Architecture detected"
+#    error "Unknown platform detected"
 #endif
 
 #define SMCP_PLATFORM_WINDOWS 1

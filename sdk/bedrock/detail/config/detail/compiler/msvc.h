@@ -25,7 +25,7 @@
 
 #define SMCP_COMPILER_VERSION  _MSC_VER
 #define SMCP_COMPILER_VERSION_MINOR 0
-#define SMCP_COMPILER_MSVC _MSC_VER
+#define SMCP_COMPILER_MSVC 1
 
 // C++ 11 Support in different compiler
 #include "cxx11support.h"

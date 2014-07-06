@@ -1,5 +1,6 @@
 #ifndef GUARD_SMCPCORE_BEDROCK_TYPESYSTEM_NULLTYPE_H
 #define GUARD_SMCPCORE_BEDROCK_TYPESYSTEM_NULLTYPE_H
+#pragma once
 
 namespace SolidMCP { namespace BedRock {
 

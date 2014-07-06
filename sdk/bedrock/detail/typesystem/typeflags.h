@@ -2,6 +2,7 @@
 
 #ifndef GUARD_SMCPCORE_BEDROCK_TYPESYSTEM_SAFEENUM_H
 #define GUARD_SMCPCORE_BEDROCK_TYPESYSTEM_SAFEENUM_H
+#pragma once
 
 #include "../Config.h"
 #include "../Memory/Smart_Ptr.h"

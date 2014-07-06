@@ -1,8 +1,8 @@
 
 #ifndef GUARD_SMCPCORE_BEDROCK_TYPESYSTEM_BINDENUM_H
 #define GUARD_SMCPCORE_BEDROCK_TYPESYSTEM_BINDENUM_H
-
 #pragma once
+
 #include "../mpl/typelist.h"
 #include "../mpl/constanttuple.h"
 #include "../status/exception.h"

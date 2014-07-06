@@ -14,7 +14,7 @@
 #if defined(UNICODE) || defined(_UNICODE) || defined(SMCP_UNICODE)
 #    define CHARACTER_SET "Unicode"
 #    ifndef SMCP_UNICODE
-#        define SMCP_UNICODE       // Internal unicde flag used in SolidMCP
+#        define SMCP_UNICODE       // Internal Unicode flag used in SolidMCP
 #    endif
 #    ifndef UNICODE
 #        define UNICODE            // UNICODE is used by Windows headers

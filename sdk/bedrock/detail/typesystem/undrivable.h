@@ -11,6 +11,7 @@
 //
 #ifndef GUARD_SMCPCORE_BEDROCK_TYPESYSTEM_UNDERIVABLE_H
 #define GUARD_SMCPCORE_BEDROCK_TYPESYSTEM_UNDERIVABLE_H
+#pragma once
 
 namespace SolidMCP { namespace BedRock {
 

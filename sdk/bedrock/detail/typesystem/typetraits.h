@@ -1,5 +1,6 @@
 #ifndef GUARD_SMCPCORE_BEDROCK_TYPESYSTEM_TYPETRAITS_H
 #define GUARD_SMCPCORE_BEDROCK_TYPESYSTEM_TYPETRAITS_H
+#pragma once
 
 #include "Type_Selector.h"
 #include "../Text/String.h"

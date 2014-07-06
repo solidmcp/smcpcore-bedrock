@@ -4,6 +4,7 @@
 //
 #ifndef GUARD_SMCPCORE_BEDROCK_TYPESYSTEM_LENGTHOF_H
 #define GUARD_SMCPCORE_BEDROCK_TYPESYSTEM_LENGTHOF_H
+#pragma once
 
 #include "../Config.h"
 
