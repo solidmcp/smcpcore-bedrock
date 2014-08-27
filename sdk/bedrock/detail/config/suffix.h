@@ -108,8 +108,8 @@ inline void SMCP_NOOP() {}
 
 // Only support MSVC currently
 //
-#if !defined(SMCP_COMPILER_MSVC) && !defined(SMCP_COMPILER_GCC)
-#    error("Notice: Only working on MSVC and GCC now, Compatiable? You bet it!")
+#if !defined(SMCP_COMPILER_MSVC) && !defined(SMCP_COMPILER_GCC) && !defined(SMCP_COMPILER_CLANG)
+#    error("Notice: Only working on MSVC, GCC and Clang now, Compatiable? You bet it!")
 #endif
 
 
